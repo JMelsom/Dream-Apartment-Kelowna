@@ -1,0 +1,212 @@
+/* @import url(http://fonts.googleapis.com/css?family=Droid+Sans|Oswald); */
+
+@background: #eeeeee;
+@fontcolor: rgb(25, 25 ,25);
+@header: rgb(25, 25 ,25);
+@titlecolor: #3eb0ff;
+
+/* My Css */
+* {
+    box-sizing: border-box;
+}
+html {
+	font: 100%/1.2 'Oswald', "Droid Sans", Verdana, sans-serif;	
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Droid Serif', sans-serif;
+    background: @background;
+    text-rendering:optimizeLegibility;
+	-webkit-font-smoothing:antialiased;
+	-webkit-text-size-adjust:100%;	
+	-ms-text-size-adjust:100%;
+	font-size:14px;
+    color: @fontcolor;
+}
+h1, h2, h3, h4, h5, h6 {
+		letter-spacing:0.08em;
+		margin:0;
+        font-family: 'Oswald', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-1 {
+    flex: 1;
+    flex-grow: 1;
+}
+.flex-2 {
+    flex: 2;
+}
+.flex-3 {
+    flex: 3;
+}
+#container {
+    width: 960px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+#theslideshow {
+    flex: 1 100%;;
+}
+header[role=main]{
+    background: @header;
+    color: @background;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 20px;
+    h1 {
+        line-height: 3.2em;
+    }
+    #header-title {
+        text-align: center;
+    }
+}
+.titles {
+    width: 100%;
+    background: @header;
+    color: @background;
+    text-align: center;
+    padding: 10px;
+}
+#content {
+    flex: 1 100%;
+    display: flex;
+}
+#description {
+    font-size: 14px;
+    margin-top: 15px;
+    flex: 100%;
+    p {
+    }
+}
+hr {
+    background-color: #bfbfbf;
+    height: 3px;
+    border: 0;
+    border-radius: 5px;
+    }
+.info-1 {
+    flex: 50%;
+    padding: 10px;
+}
+.contact {
+    flex: 50%;
+    padding: 10px;
+}
+#highlights {
+    line-height: 20px;
+    li {
+        line-height: 20px;
+    }
+}
+footer {
+    height: 50px;
+    background: @header;
+    color: @background;
+    padding: 10px;
+    text-align: right;
+    margin-top: 15px;
+    line-height: 2.2em;
+}
+/* Jssor Stuff 1 */
+
+/* jssor slider arrow navigator skin 05 css */
+                    /*
+            .jssora05l              (normal)
+            .jssora05r              (normal)
+            .jssora05l:hover        (normal mouseover)
+            .jssora05r:hover        (normal mouseover)
+            .jssora05ldn            (mousedown)
+            .jssora05rdn            (mousedown)
+            */
+                    
+                    .jssora05l,
+                    .jssora05r,
+                    .jssora05ldn,
+                    .jssora05rdn {
+                        position: absolute;
+                        cursor: pointer;
+                        display: block;
+                        background: url(../img/a17.png) no-repeat;
+                        overflow: hidden;
+                    }
+                    
+                    .jssora05l {
+                        background-position: -10px -40px;
+                    }
+                    
+                    .jssora05r {
+                        background-position: -70px -40px;
+                    }
+                    
+                    .jssora05l:hover {
+                        background-position: -130px -40px;
+                    }
+                    
+                    .jssora05r:hover {
+                        background-position: -190px -40px;
+                    }
+                    
+                    .jssora05ldn {
+                        background-position: -250px -40px;
+                    }
+                    
+                    .jssora05rdn {
+                        background-position: -310px -40px;
+                    }
+
+/* Jssor Stuff 2 */
+
+ /* jssor slider thumbnail navigator skin 01 css */
+                        /*
+                .jssort01 .p           (normal)
+                .jssort01 .p:hover     (normal mouseover)
+                .jssort01 .pav           (active)
+                .jssort01 .pav:hover     (active mouseover)
+                .jssort01 .pdn           (mousedown)
+                */
+                        
+                        .jssort01 .w {
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        
+                        .jssort01 .c {
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            width: 68px;
+                            height: 68px;
+                        }
+                        
+                        .jssort01 .p:hover .c,
+                        .jssort01 .pav:hover .c,
+                        .jssort01 .pav .c {
+                            background: url(images/slider/t01.png) center center;
+                            border-width: 0px;
+                            top: 2px;
+                            left: 2px;
+                            width: 68px;
+                            height: 68px;
+                        }
+                        
+                        .jssort01 .p:hover .c,
+                        .jssort01 .pav:hover .c {
+                            top: 0px;
+                            left: 0px;
+                            width: 70px;
+                            height: 70px;
+                            border: #fff 1px solid;
+                        }
